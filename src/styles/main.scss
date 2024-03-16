@@ -1,5 +1,57 @@
-$corDeFundo: #b13636;
+@use 'hero';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$CorDeFundo:#939474;
+$ColorText: #dbddaa;
+$ColorTitle: #65644b;
+$ColorLink: #fff;
 
 body {
-    background-color: $corDeFundo;
+    background-color: $CorDeFundo;
+}
+
+@mixin text($fontsize:16px) {
+    font-size: $fontsize;
+    line-height: $fontsize + 10px;
+}
+
+@mixin title($fontsize:40px) {
+    @include text($fontsize);
+    color: $ColorTitle
+}
+
+.text--big {
+    @include text(18px);
+}
+
+.text {
+    @include text;
+    color: $ColorText;
+}
+
+.text--small {
+    @include text(12px);
+}
+
+.title--big {
+    @include title(44px);
+}
+
+.title {
+    @include title;
+}
+
+.title--small {
+    @include title(28px);
+}
+
+.link-text {
+    @include text(18px);
+    color: $ColorLink;
+    text-decoration: underline;
 }

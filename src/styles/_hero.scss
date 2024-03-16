@@ -1,0 +1,38 @@
+.hero {
+    padding: 4.5vw;
+    min-height: 95vh;
+    background-image: url(../images/background-hero-shrek.jpg);
+    background-size: cover;
+
+    &__content {
+        max-width: 640px;
+        text-align: center;
+
+
+        &__branding {
+
+            display: flex;
+            justify-content: center;
+
+            img {
+                width: 80%;
+            }
+        }
+
+        &__button {
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            background-color: aqua;
+            padding: 4px;
+            position: relative;
+
+
+            img {
+                width: 100px;
+                position: relative;
+                z-index: 1;
+            }
+        }
+    }
+}
