@@ -1,3 +1,4 @@
+@use 'variaveis';
 @use 'hero';
 
 * {
@@ -6,13 +7,9 @@
     box-sizing: border-box;
 }
 
-$CorDeFundo:#939474;
-$ColorText: #dbddaa;
-$ColorTitle: #65644b;
-$ColorLink: #fff;
 
 body {
-    background-color: $CorDeFundo;
+    background-color: variaveis.$CorDeFundo;
 }
 
 @mixin text($fontsize:16px) {
@@ -22,7 +19,7 @@ body {
 
 @mixin title($fontsize:40px) {
     @include text($fontsize);
-    color: $ColorTitle
+    color: variaveis.$ColorTitle
 }
 
 .text--big {
@@ -31,7 +28,8 @@ body {
 
 .text {
     @include text;
-    color: $ColorText;
+    color: variaveis.$ColorLink;
+    font-weight: bold
 }
 
 .text--small {
@@ -52,6 +50,6 @@ body {
 
 .link-text {
     @include text(18px);
-    color: $ColorLink;
+    color: variaveis.$ColorLink;
     text-decoration: underline;
 }

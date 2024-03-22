@@ -1,3 +1,5 @@
+@use 'variaveis';
+
 .hero {
     padding: 4.5vw;
     min-height: 95vh;
@@ -20,18 +22,27 @@
         }
 
         &__button {
-            margin: 0 auto;
-            display: flex;
             align-items: center;
-            background-color: aqua;
-            padding: 4px;
-            position: relative;
-
 
             img {
-                width: 100px;
-                position: relative;
-                z-index: 1;
+                width: 600px;
+            }
+        }
+
+        &__link {
+            display: block;
+            background-color: variaveis.$ColorTitle;
+            
+            a {
+                display: flex;
+                justify-content: center;
+                max-width: 640px;
+            }
+            
+            span {
+                display: flex;
+                justify-content: center;
+                max-width: 640px;
             }
         }
     }
