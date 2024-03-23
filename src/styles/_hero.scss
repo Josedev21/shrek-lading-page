@@ -32,17 +32,19 @@
         &__link {
             display: block;
             background-color: variaveis.$ColorTitle;
-            
+            border-radius: 20px;
+            border: 2px solid variaveis.$ColorLink;
+
             a {
                 display: flex;
                 justify-content: center;
-                max-width: 640px;
+                padding-top: 8px;
             }
             
             span {
                 display: flex;
                 justify-content: center;
-                max-width: 640px;
+                padding-bottom: 8px;
             }
         }
     }

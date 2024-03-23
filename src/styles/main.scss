@@ -1,6 +1,19 @@
 @use 'variaveis';
 @use 'hero';
 
+
+@font-face {
+    font-family: MontDemo;
+    src: url(../../assets/fonts/MontDemo-ExtraLight.otf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: MontDemo;
+    src: url(../../assets/fonts/MontDemo-Heavy.otf);
+    font-weight: 700;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +23,7 @@
 
 body {
     background-color: variaveis.$CorDeFundo;
+    font-family: MontDemo, sans-serif;
 }
 
 @mixin text($fontsize:16px) {
