@@ -1,5 +1,8 @@
 @use 'variaveis';
 @use 'hero';
+@use 'inform';
+@use 'shows';
+@use 'faq';
 
 
 @font-face {
@@ -18,13 +21,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-
-body {
-    background-color: variaveis.$CorDeFundo;
     font-family: MontDemo, sans-serif;
+    list-style: none;
 }
+
 
 @mixin text($fontsize:16px) {
     font-size: $fontsize;
@@ -33,7 +33,7 @@ body {
 
 @mixin title($fontsize:40px) {
     @include text($fontsize);
-    color: variaveis.$ColorTitle
+    color: variaveis.$BorderImg;
 }
 
 .text--big {

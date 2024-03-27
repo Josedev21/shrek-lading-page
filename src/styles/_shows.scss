@@ -1,0 +1,69 @@
+@use 'variaveis';
+
+.shows {
+    margin: 0 auto;
+    padding: 2vw 4.5vw;
+    background-color: variaveis.$backgroundShow;
+
+    &__list {
+        margin-top: 44px;
+        display: none;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 25px;
+
+        &--is-active {
+            display: grid;
+        }
+
+        &__item {
+            display: flex;
+            align-items: center;
+
+            h2 {
+                color: variaveis.$ColorLink;
+                text-transform: uppercase;
+                background-color: variaveis.$BorderImg;
+                padding: 5px;
+                border-radius: 7px;
+                box-shadow: 10px 10px 10px black;
+            }
+
+            img {
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto;
+                width: 250px;
+                height: 300px;
+                border-radius: 20px;
+                border: 8px solid variaveis.$BorderImg;
+                filter: drop-shadow(10px 10px 15px black);
+
+                &:hover {
+                    transform: scale(1.1);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    &__tabs {
+        display: flex;
+        justify-content: center;
+
+        &__button {
+            color: variaveis.$ColorLink;
+            font-size: 20px;
+            border: none;
+            padding-bottom: 5px;
+            background: none;
+            text-transform: uppercase;
+            margin: 0 1vw;
+            border-bottom: 5px solid transparent;
+            cursor: pointer;
+            
+            &--is-active {
+                border-bottom: 5px solid variaveis.$ColorLink;
+            }
+        }
+    }
+}

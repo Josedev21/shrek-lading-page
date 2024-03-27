@@ -1,0 +1,27 @@
+@use 'variaveis';
+
+.inform {
+    padding: 4.5vw;
+    background-color: variaveis.$CorDeFundo;
+
+    &__content{
+        max-width: 800px;
+        text-align: center;
+        margin: 0 auto;
+        
+        &__title{
+            padding-bottom: 20px;
+            color: variaveis.$BorderImg;
+        }
+
+        &__item {
+            color: variaveis.$ColorLink;
+            margin-bottom: 20px;
+
+            span {
+                color: variaveis.$ColorTitle;
+                font-weight: bold;
+            }
+        }
+    }
+}
