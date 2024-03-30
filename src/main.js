@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
 })
 
 function abreOuFechaResposta(elemento) {
-    const classe = 'faq__question__item--is-open';
+    const classe = 'faq__questions__item--is-open';
     const elementoPai = elemento.target.parentNode;
     console.log(elementoPai)
 

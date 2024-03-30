@@ -9,11 +9,27 @@
 </head>
 
 <body>
+    <header class="header">
+        <div class="header__container">
+            <h1 class="header__logo">
+                <img class="header__logo__img" src="./dist/images/sherek-button -ofc.png" alt="">
+                <img  class="header__logo__img" src="./dist/images/logo/logo.png" alt="">
+            </h1>
+            <ul class="header__links">
+                <li class="header__links__item  button">
+                    <a href="#">Assinar</a>
+                </li>
+                <li class="header__links__item  button  button--transp">
+                    <a href="#">Comprar</a>
+                </li>
+            </ul>
+        </div>
+    </header>
     <section class="hero">
         <div class="hero__content">
-            <h1 class="hero__content__branding">
+            <div class="hero__content__branding">
                 <img src="./dist/images/logo/logo.png" alt="">
-            </h1>
+            </div>
             <h4 class="title--big">O Filme</h4>
             <div class="hero__content__button">
                 <a href="#">
@@ -29,21 +45,27 @@
     <section class="inform">
         <div class="inform__content ">
             <h2 class="inform__content__title title">Resumo</h2>
-            <p class="inform__content__item  text--big">O filme <span>Shrek</span> é uma animação que gira em torno de um ogro
-                chamado <span>Shrek</span>, que vive em um pântano tranquilo até que sua vida é interrompida pela invasão de
+            <p class="inform__content__item  text--big">O filme <span>Shrek</span> é uma animação que gira em torno de
+                um ogro
+                chamado <span>Shrek</span>, que vive em um pântano tranquilo até que sua vida é interrompida pela
+                invasão de
                 personagens de contos de fadas que foram banidos de sua terra pelo maligno Lorde Farquaad. Para
-                recuperar sua paz e tranquilidade, <span>Shrek</span> faz um acordo com Farquaad para resgatar a princesa Fiona, que
-                está aprisionada em uma torre guardada por um dragão. Durante sua jornada, <span>Shrek</span> é acompanhado por um
+                recuperar sua paz e tranquilidade, <span>Shrek</span> faz um acordo com Farquaad para resgatar a
+                princesa Fiona, que
+                está aprisionada em uma torre guardada por um dragão. Durante sua jornada, <span>Shrek</span> é
+                acompanhado por um
                 burro tagarela.</p>
 
             <p class="inform__content__item  text--big">
-                Ao resgatar Fiona, <span>Shrek</span> descobre que ela esconde um segredo: à noite, ela se transforma em uma ogra. A
+                Ao resgatar Fiona, <span>Shrek</span> descobre que ela esconde um segredo: à noite, ela se transforma em
+                uma ogra. A
                 princesa e o ogro desenvolvem um vínculo especial, mas Fiona está determinada a se casar com Farquaad.
                 No entanto, durante a cerimônia de casamento, o sol se põe e Fiona se transforma em sua forma de ogra,
                 revelando sua verdadeira identidade para todos.
             </p>
 
-            <p class="inform__content__item  text--big"> "príncipe baixinho de cabelo laranja" se refere ao personagem chamado Lorde Farquaad, o
+            <p class="inform__content__item  text--big"> "príncipe baixinho de cabelo laranja" se refere ao personagem
+                chamado Lorde Farquaad, o
                 antagonista do filme. Ele é o governante de Duloc, um reino cheio de regras e perfeição. Farquaad é
                 conhecido por sua baixa estatura e por usar uma peruca laranja. Ele é retratado como ambicioso, cruel e
                 determinado a se casar com uma princesa para se tornar rei legítimo.
@@ -52,7 +74,8 @@
     </section>
     <section class="shows">
         <nav class="shows__tabs">
-            <button data-tab-button="personagem" class="shows__tabs__button shows__tabs__button--is-active">Personagens</button>
+            <button data-tab-button="personagem"
+                class="shows__tabs__button shows__tabs__button--is-active">Personagens</button>
             <button data-tab-button="dubladores" class="shows__tabs__button">Dubladores</button>
         </nav>
         <ul data-tab-id="personagem" class="shows__list shows__list--is-active">
@@ -116,15 +139,37 @@
                     Pergunta
                 </div>
                 <div class="faq__questions__item__answer text--big">
-                    Resposta
+                    <h4>Respostas</h4>
+                    <ul class="faq__questions__item__answer__tab">
+                        <li>
+                            Resposta1
+                        </li>
+                        <li>
+                            Resposta2
+                        </li>
+                        <li>
+                            Resposta3
+                        </li>
+                    </ul>
                 </div>
             </li>
-            <li class="faq__questions__item faq__questions__item--is-open">
+            <li class="faq__questions__item ">
                 <div class="faq__questions__item__question" data-faq-question>
                     Pergunta
                 </div>
                 <div class="faq__questions__item__answer text--big">
-                    Resposta
+                    <h4>Respostas</h4>
+                    <ul class="faq__questions__item__answer__tab">
+                        <li>
+                            Resposta1
+                        </li>
+                        <li>
+                            Resposta2
+                        </li>
+                        <li>
+                            Resposta3
+                        </li>
+                    </ul>
                 </div>
             </li>
             <li class="faq__questions__item">
@@ -132,13 +177,61 @@
                     Pergunta
                 </div>
                 <div class="faq__questions__item__answer text--big">
-                    Resposta
+                    <h4>Respostas</h4>
+                    <ul class="faq__questions__item__answer__tab">
+                        <li>
+                            Resposta1
+                        </li>
+                        <li>
+                            Resposta2
+                        </li>
+                        <li>
+                            Resposta3
+                        </li>
+                    </ul>
                 </div>
             </li>
         </ul>
     </section>
-
+    <footer class="footer">
+        <div class="footer__container">
+            <img class="footer__logo" src="./dist/images/logo/logo.png" alt="">
+            <ul class="footer__links">
+                <li class="footer__links__item">
+                    <div class="linguage-selector">
+                        <img src="./dist/images/icones/globe.svg" alt="Globo do mundo">
+                        <select class="text--small">
+                            <option> English</option>
+                            <option selected> Português</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Termos e condições</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Politica de privacidade</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Proteção de dados no Brasil</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Anuncios personalizados</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Dispositivos compativeis</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Ajuda</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Mais Sobre Shrek</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
 
-    <script src="./src/main.js"></script>
+<script src="./src/main.js"></script>
+
 </html>

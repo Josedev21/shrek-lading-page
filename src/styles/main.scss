@@ -3,6 +3,8 @@
 @use 'inform';
 @use 'shows';
 @use 'faq';
+@use 'footer';
+@use 'header';
 
 
 @font-face {
@@ -22,16 +24,18 @@
     padding: 0;
     box-sizing: border-box;
     font-family: MontDemo, sans-serif;
+}
+
+body {
     list-style: none;
 }
 
-
-@mixin text($fontsize:16px) {
+@mixin text($fontsize: 16px) {
     font-size: $fontsize;
     line-height: $fontsize + 10px;
 }
 
-@mixin title($fontsize:40px) {
+@mixin title($fontsize: 40px) {
     @include text($fontsize);
     color: variaveis.$BorderImg;
 }
@@ -48,6 +52,7 @@
 
 .text--small {
     @include text(12px);
+    color: variaveis.$BorderImg;
 }
 
 .title--big {
@@ -66,4 +71,29 @@
     @include text(18px);
     color: variaveis.$ColorLink;
     text-decoration: underline;
+}
+
+.button {
+    padding: 15px 24px;
+    background-color: variaveis.$ColorTitle;
+    align-items: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 4px solid variaveis.$BorderImg;
+    justify-content: center;
+
+    &:hover {
+        background-color: rgba(variaveis.$ColorTitle, .8);
+    }
+
+    &--transp {
+        background-color: rgba(variaveis.$BorderImg, .5);
+        border-color: variaveis.$ColorTitle;
+
+            &:hover {
+                background-color: variaveis.$ColorLink;
+                color: variaveis.$BorderImg;
+            }
+    }
 }
